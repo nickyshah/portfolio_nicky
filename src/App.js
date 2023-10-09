@@ -11,8 +11,10 @@ import { Skills } from './Components/Skills';
 
 function App() {
   return (
+    <><input type="checkbox" id="darkMode"/>
     <div className="wrapper">
-      
+    <label for="darkMode" class="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></label>
+
      <Navbar />
      <Hero />
      < Info />
@@ -22,6 +24,7 @@ function App() {
      <Contact/>
      <Footer />
     </div>
+    </>
   );
 }
 

@@ -35,6 +35,46 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+.line::before{
+  content:"";
+  width: 4px;
+  height: 100%;
+
+  position: absolute;
+  left: 58px;
+  background: var(--color-orange);
+}
+
+.dark-mode-toggle:hover{
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#darkMode{
+  display: none;
+}
+
+.dark-mode-toggle{
+  position: fixed;
+  top: 8rem;
+  left: 3rem;
+}
+.wrapper{
+  background: var(--body-bg);
+}
+
+#darkMode:checked + .wrapper{
+  /* background: black; */
+  --body-bg: var(--dark-bg);
+  --text-color: var(--dark-text-color);
+  /* color: var(--dark-text-color); */
+  --border-color: var(--dark-border-color);
+
+
+}
+
 header{
   box-shadow: 0 0 10px 5px grey;
   position: sticky;
@@ -43,6 +83,8 @@ header{
 }
 .navigation{
   justify-content: space-between;
+  color: var(--text-color);
+  /* background-color: var(--body-bg); */
   
 }
 
@@ -75,6 +117,7 @@ header{
   grid-template-areas: "left right";
   background-color: var(--color-orange);
   padding: 3rem 2rem;
+  border-radius: 10px;
 }
 .download-btn{
   background: var(--color-dark);
@@ -143,6 +186,7 @@ header{
   font-weight: bold;
   font-size: 1.3rem;
   letter-spacing: 2px;
+  color: var(--text-color);
 }
 
 
@@ -176,6 +220,7 @@ header{
 .skills .icon p{
   font-weight: bold;
   font-size: 1.3rem;
+  color: var(--text-color);
   letter-spacing: 2px;
 }
 
@@ -203,6 +248,7 @@ header{
 .projects > h2{
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--text-color);
 }
 
 .projects .project-container{
@@ -230,6 +276,10 @@ header{
 .projects .project-container .bottm span{
   display: flex;
   justify-content: space-between;
+  color: var(--text-color);
+}
+.projects .project-container .bottm{
+  color: var(--text-color);
 }
 
 .projects .project-container .bottm a{
@@ -248,6 +298,7 @@ header{
 .about>h2{
   text-align: center;
   padding-top: 1rem;
+  color: var(--text-color);
   text-decoration: underline;
 }
 
@@ -269,11 +320,18 @@ header{
 .about-content .my-bio h2{
   font-size: 2rem;
   font-weight: bold;
+  color: var(--text-color);
   margin-bottom: 2rem;
+}
+
+.about-content .my-bio p{
+  color: var(--text-color);
+
 }
 
 .my-bio p:nth-child(4){
   font-weight: bold;
+  color: var(--text-color);
   font-size: 1.3rem;
   padding: 2rem 0;
 }
@@ -287,6 +345,7 @@ header{
 .my-bio .tag  div span{
   padding: 0.8rem 1.2rem;
   border-radius: 5px;
+  color: var(--text-color);
 }
 
 .my-bio .tag  div span:hover{
@@ -299,11 +358,15 @@ header{
   padding-top: 7rem;
   text-align: center;
   margin-bottom: 5rem;
+  color: var(--text-color);
+
 }
 
 .contact .social{
   justify-content: space-around;
   margin: 5rem;
+  color: var(--text-color);
+
 }
 
 .contact .social i{
