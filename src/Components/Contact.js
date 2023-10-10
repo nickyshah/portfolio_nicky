@@ -11,17 +11,17 @@ export const Contact = () => {
             <div class="social flex">
 
                 <a href="https://www.linkedin.com/in/nicky-shah/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-linkedin" style={{color:"blue"}}></i>
                 </a>
                 <a href="https://github.com/" target="_blank">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="youtube.com" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-youtube" style={{color:"red"}}></i>
                 </a>
                 
                 <a href="tel:0406881676">
-                    <i class="fa-solid fa-mobile"></i>
+                    <i class="fa-solid fa-mobile"style={{color:"black"}}></i>
                 </a>
 
             </div>
