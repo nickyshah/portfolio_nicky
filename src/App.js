@@ -16,6 +16,7 @@ function App() {
     <div className="wrapper">
     <label for="darkMode" class="dark-mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></label>
     <Navbar />
+    <div className="main">
     <Routes>
       <Route path="/" element={ <Hero />}/>
       <Route path="/info" element={ < Info />}/>
@@ -24,6 +25,7 @@ function App() {
       <Route path="/about" element={ <About />}/>
       <Route path="/contact" element={ <Contact/>}/>
     </Routes>
+    </div>
     <Footer /> 
     
      {/* < Info />

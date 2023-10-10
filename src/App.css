@@ -20,6 +20,9 @@ html{
   scroll-behavior: smooth;
 }
 
+.main{
+  min-height: 78vh;
+}
 .flex{
   display: flex;
   gap: 1rem;
@@ -420,7 +423,7 @@ header{
   /* padding: 3rem 0; */
   background: #2a2a2a;
   color: white;
-  margin-top: 3.5rem;
+  
 }
 
 .footer .top{

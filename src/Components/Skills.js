@@ -1,7 +1,8 @@
 import React from 'react'
 
 export const Skills = () => {
-  return (
+  return (<>
+            <div className='container' style={{textAlign:"center", marginTop:"2rem",}}><strong style={{fontSize:"2rem"}}>My Skills</strong></div>
      <section className="skills container flex" id="skills">
        
         
@@ -33,6 +34,13 @@ export const Skills = () => {
                 </span>
                 <p>React.js</p>
             </div>
+            <div className="icon flex">
+                <span>
+                <i class="fa-brands fa-github"></i>
+                </span>
+                <p>Github</p>
+            </div>
        </section>
+       </>
   )
 }
