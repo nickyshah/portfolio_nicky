@@ -60,6 +60,7 @@ a{
   position: fixed;
   top: 8rem;
   left: 3rem;
+  color: var(--text-color);
 }
 .wrapper{
   background: var(--body-bg);
